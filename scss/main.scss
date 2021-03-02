@@ -1,0 +1,53 @@
+@import './resets';
+@import './variables';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: $font-family;
+}
+
+.mini-nav > ul > li {
+    float: left;
+    border-left: 1px solid #ddd;
+    padding: 3px 0;
+    & > a {
+        display: block;
+        color: $darker;
+        padding: 0 18px;
+        line-height: 27px;
+        text-decoration: none;
+        font-size: 12px;
+        letter-spacing: 1px;
+        & > .currency-flag {
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            text-align: center;
+        }
+        &:hover > .currency-flag {
+            border-color: $secondary;
+        }
+    }
+    &:last-child {
+        border-right: 1px solid #ddd;
+    }
+}
+
+.mini-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mini-nav > ul::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+// mini header ends
+
+.main-header{
+    background-color: $darker;
+    height: 60px;
+}

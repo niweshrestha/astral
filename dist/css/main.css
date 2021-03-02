@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.mini-nav > ul > li {
+  float: left;
+  border-left: 1px solid #ddd;
+  padding: 3px 0;
+}
+
+.mini-nav > ul > li > a {
+  display: block;
+  color: #262423;
+  padding: 0 18px;
+  line-height: 27px;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.mini-nav > ul > li > a > .currency-flag {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+
+.mini-nav > ul > li > a:hover > .currency-flag {
+  border-color: #D89A43;
+}
+
+.mini-nav > ul > li:last-child {
+  border-right: 1px solid #ddd;
+}
+
+.mini-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mini-nav > ul::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  background-color: #262423;
+  height: 60px;
+}
+/*# sourceMappingURL=main.css.map */
