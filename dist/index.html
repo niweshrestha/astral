@@ -7,6 +7,7 @@
     <title>Document</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -34,17 +35,375 @@
                 <!-- main-header-section -->
                 <div class="main-header">
                     <div class="container">
-                        <div class="row justify-content-between">
-                            <div class="col-4 col-md-4" style="background-color: coral;">1</div>
-                            <div class="col" style="background-color: darkcyan;">2</div>
-                            <div class="col-2 col-md-2" style="background-color: rosybrown;">3</div>
+                        <div class="row justify-content-between main-header-align-item">
+                            <div class="col-4 col-md-4">
+                                <div class="main-header-logo">
+                                    <div class="ham-burgermenu" style="display: none;"><img src="./images/icons/hamburger-menu.svg" alt="hamburger menu"></div>
+                                    <div class="astrail-logo main-header-logo-flex-logo"><a href="#!"><img src="./images/logo/logo.svg" alt="Astrail Logo"></a></div>
+                                    <nav class="parent-nav main-header-logo-flex-nav">
+                                        <ul>
+                                            <a href="#!"><li>Man</li></a>
+                                            <a href="#!"><li>Women</li></a>
+                                            <a href="#!" class="active"><li>Organic</li></a>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col main-header-search">
+                                <form action="#!">
+                                    <div class="form-group">
+                                        <input type="search" class="form-control" placeholder="Search for items, brands and inspiration">
+                                        <button type="submit" class="search-button"><i class="bi bi-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-2 col-md-2">
+                                <nav class="user-nav">
+                                    <ul>
+                                        <li>
+                                            <a href="#!">
+                                                <img src="./images/icons/user.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                <img src="./images/icons/heart.svg" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                <img src="./images/icons/shopping-bag.svg" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- main-header-section-end -->
 
                 <!-- header-mega-menu-section -->
-                <div class="header-mega-menu"></div>
+                <div class="header-mega-menu">
+                    <div class="container">
+                        <div class="col">
+                            <nav class="sub-categories-menu">
+                                <ul>
+                                    <li class=" addRemoveClass">
+                                        <a href="#!">Offers</a>
+                                        <div class="categories-mega-box">
+                                            <div class="content">
+                                                <div class="mega-separater special-offer card-with-4-column">
+                                                    <header>Offers</header>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                    <h3>Up to 50% off new stuff!</h3>
+                                                                </div>
+                                                                <div class="content">The deal never stop...</div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                    <h3>Up to 50% off new stuff!</h3>
+                                                                </div>
+                                                                <div class="content">With code: EXTRAS</div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                    <h3>Up to 50% off new stuff!</h3>
+                                                                </div>
+                                                                <div class="content">Face + Body Brands</div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                    <h3>Up to 50% off new stuff!</h3>
+                                                                </div>
+                                                                <div class="content">Get up to 80% off</div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#!">New in</a>
+                                        <div class="categories-mega-box">
+                                            <div class="content">
+                                                <div class="mega-separater list-style-design twoColumnList">
+                                                    <header>New Products</header>
+                                                    <ul>
+                                                        <li><a href="#!">View all</a></li>
+                                                        <li><a href="#!">Clothing</a></li>
+                                                        <li><a href="#!">Shoes</a></li>
+                                                        <li><a href="#!">Accessories</a></li>
+                                                        <li><a href="#!">Face + Body</a></li>
+                                                        <li><a href="#!">Topman</a></li>
+                                                        <li><a href="#!">Back in stock</a></li>
+                                                        <li><a href="#!">Outlet</a></li>
+                                                        <li><a href="#!">Trending now</a></li>
+                                                        <li><a href="#!">Gift vouchers</a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="mega-separater card-style-design card-with-3-column">
+                                                    <header>New Edits</header>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#!"><img src="./images/menu-images/mw_getretro_320x366.webp" alt="card-product-menu">
+                                                                <h3>Get Retro With It</h3>
+                                                            </a> 
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!"><img src="./images/menu-images/mw_musthaves_320x366.webp" alt="card-product-menu">
+                                                                <h3>Astral Design Must Haves</h3>
+                                                            </a> 
+                                                         </li>
+                                                         <li>
+                                                            <a href="#!"><img src="./images/menu-images/mw_north_face_320x366.webp" alt="card-product-menu">
+                                                                <h3>The north face</h3>
+                                                            </a> 
+                                                         </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Topman</a>
+                                        <div class="categories-mega-box">
+                                            <div class="content">
+                                                <div class="mega-separater shop-by-product twoColumnList">
+                                                    <header>Shop By Product</header>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="mega-separater card-style-design card-with-2-column">
+                                                    <header>New Edits</header>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#!"><img src="./images/menu-images/mw_getretro_320x366.webp" alt="card-product-menu">
+                                                                <h3>The north face</h3>
+                                                            </a> 
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!"><img src="./images/menu-images/mw_musthaves_320x366.webp" alt="card-product-menu">
+                                                                <h3>The north face</h3>
+                                                            </a> 
+                                                         </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Clothing</a>
+                                        <div class="categories-mega-box">
+                                            <div class="content">
+                                                <div class="mega-separater shop-by-product">
+                                                    <header>Shop By Fit Body</header>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="mega-separater product-column-list">
+                                                    <header>New Drops</header>
+                                                    <!-- first column -->
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>Astral Dark Future</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <!-- second column -->
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!">
+                                                                <div class="outter-border-box">
+                                                                    <div class="image-holder" style="background-image:url(./images/menu-images/mw_getretro_320x366.webp);"></div>
+                                                                </div>
+                                                                <span>New in</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="mega-separater card-style-design card-with-2-column">
+                                                    <header>New Edits</header>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#!"><img src="./images/menu-images/mw_getretro_320x366.webp" alt="card-product-menu">
+                                                                <h3>The north face</h3>
+                                                            </a> 
+                                                        </li>
+                                                        <li>
+                                                            <a href="#!"><img src="./images/menu-images/mw_musthaves_320x366.webp" alt="card-product-menu">
+                                                                <h3>The north face</h3>
+                                                            </a> 
+                                                         </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#!">Shoes</a></li>
+                                    <li><a href="#!">Accessories</a></li>
+                                    <li><a href="#!">Treanding now</a></li>
+                                    <li><a href="#!">Activeware</a></li>
+                                    <li><a href="#!">Face + Body</a></li>
+                                    <li><a href="#!">Brands</a></li>
+                                    <li class="highlighter addRemoveClass"><a href="#!">Outlet</a></li>
+                                    <li><a href="#!">Marketplace</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
                 <!-- header-mega-menu-section-end -->
             </header>
             <!-- header .end -->
@@ -55,5 +414,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $('.addRemoveClass').hover(
+            function(){ $(this).removeClass('highlighter') },
+            function(){ $(this).addClass('highlighter') }
+        )
+    </script>
 </body>
 </html>
