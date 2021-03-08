@@ -1,0 +1,106 @@
+@import "./variables";
+
+.footer-navigations {
+  position: relative;
+  display: flex;
+  padding: 24px 3rem;
+  background-color: $white-shade;
+  justify-content: space-between;
+  & > section {
+    // background-color: aqua;
+    display: flex;
+    min-width: 200px;
+    flex-direction: column;
+    & h1 {
+      color: $grey;
+      letter-spacing: 2px;
+      font-size: 14px;
+      font-weight: $bold;
+    }
+    & > a {
+      display: flex;
+      align-items: center;
+      color: $premium;
+      margin: 5px 0px;
+      text-decoration: none;
+      font-size: 12px;
+
+      &:hover {
+        color: $focus;
+      }
+
+      & > span {
+        color: $grey;
+        letter-spacing: 2px;
+        font-size: 14px;
+        font-weight: $bold;
+      }
+
+      & .currency-flag {
+        margin: 0px 5px;
+        border: 1px solid $grey-light;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &:hover > .currency-flag {
+        border-color: $secondary;
+      }
+    }
+  }
+}
+
+.footer-copyright {
+  font-size: 12px;
+  display: flex;
+  padding: 7px 3rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $grey-light;
+
+  & .footer-extras {
+    display: flex;
+    align-items: center;
+    & > a {
+      color: $darker;
+      text-decoration: none;
+      &:hover {
+        color: $focus;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #customer-location {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0px 3rem;
+    display: flex;
+    justify-content: center;
+
+    border-top: 1px solid $grey-light;
+    background-color: $white-shade;
+    & > h1 {
+      display: none;
+    }
+  }
+  .footer-copyright {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .footer-navigations {
+    display: none;
+  }
+  .footer-copyright {
+    margin-top: 60px;
+  }
+}
